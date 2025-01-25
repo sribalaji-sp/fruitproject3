@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Details</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        color: black;
+        background-color: yellow;
+        padding: 0.7rem;
+        border-radius: 1.5rem;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ORDER DETAILS</h1> <br>
+    <form action="order.php" method="post">
+      <h2>Mobile number:</h2><input
+        type="number"
+        placeholder="Enter your mobile number"
+        name="phone"
+        required
+      /> <br><br>
+
+      <h2>Address :</h2><input
+        type="text"
+        placeholder="Enter your address"
+        name="address"
+        required
+      /> <br><br>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </body>
+</html>
